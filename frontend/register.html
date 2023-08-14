@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon_io/favicon-16x16.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>RoundTable</title>
+</head>
+<body>
+    <div class="nav">
+        <a href="/index.html"><div class="logo"></div></a>
+        
+        <div id="search-box">
+            <img src="/assets/search--v1.png" id="searchIcon">
+            <input type="text" placeholder="Search your event..">
+            <img src="/assets/search--v1.png" class="search-icon">
+        </div>
+    </div>
+
+    <div class="con_reg_container">
+        <h1>Register your event</h1>
+        <p>Showcase your event to the world by filling out this form</p>
+
+        <div class="con_reg-form_container">
+            <div class="con_reg-form">
+                <input type="text" placeholder="Enter the name of your event" id="" required>
+                <textarea placeholder="Describe your event" id="" cols="5" rows="2" required></textarea>
+                <input type="datetime-local" name="" id="" required>
+                <input type="text" placeholder="Enter event location" id="">
+
+                <div class="con-team">
+                    <input type="text" placeholder="Enter team name" id="">
+                    <span><span class="material-symbols-rounded">warning</span> Names must be separated by comma</span>
+                </div>
+
+                <div class="conference-img">
+                    <button>Upload Image</button>
+                </div>
+
+                <div class="con_contact-details">
+                    <h3>Organization's Details</h3>
+                    <input type="text" placeholder="Enter your name" id="" required>
+                    <input type="url" placeholder="Enter your website url" id="" required>
+                    <input type="email" placeholder="Enter your email" id="" required>
+                    <input type="number" placeholder="Enter you phone number" id="" required>
+                    <input type="text" placeholder="Enter your address" id="" required>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="con_reg-button">
+            <a href="#"><button>Create Event</button></a>
+        </div>
+
+        
+    </div>
+
+    <div class="event_confirm_dim hide">
+        <div class="event_confirm_main">
+            <div class="confirm_event_content">
+                <h5>Congratulations your event has been created 🔔</h5>
+                <p>Thanks for using <b>The RoundTable</b></p>
+                <span class="material-symbols-rounded">close</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- <span class="material-symbols-rounded">
+            home
+            </span> -->
+
+    <script src="/app.js"></script>
+</body>
+</html>
