@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon_io/favicon-16x16.png">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>RoundTable</title>
+</head>
+
+<body>
+
+    <div class="nav">
+        <a href="/index.html">
+            <div class="logo"></div>
+        </a>
+
+        <!-- <div id="search-box">
+            <img src="/assets/search--v1.png" id="searchIcon">
+            <input type="text" placeholder="Search your event..">
+            <img src="/assets/search--v1.png" class="search-icon">
+        </div> -->
+
+
+        <!-- <a href="/register.html" class="create-con">Create Event</a> -->
+
+    </div>
+
+    <div class="event_container">
+        <div class="event_section">
+            <div class="event_img">
+                <img src="/assets/benita.jpg" alt="">
+            </div>
+
+            <div class="event_text">
+                <div class="event_text_header">
+                    <h1>Learn Frontend Development (The Basics)</h1>
+                </div>
+
+                <div class="event_text_desc">
+                    <p>The greatest tool we have today is technology and mastering it sets above your peers, higher up
+                        the food chain, and makes life in general more easy. Joining us will be one the brightest
+                        individuals currently dominating the tech space <b>Miss Machukwu Benita</b> of the <b>Federal
+                            University of technology owerri (F.U.T.O)</b> who will be discussing on the "Vast
+                        Opportunties of Tech in 2023", don't think of missing out on this conference as minds will be
+                        reawakened and we will have a new door in which many will be elevated.</p>
+                    <p><b>Date :</b>Wednesday 6th June, 2023</p>
+                    <p><b>Time :</b> 3:00 - 4:00pm (WAT)</p>
+                    <p><b>Location :</b>12 Ibekwe Street, Opposite Round Mall 3rd Floor Room 15, Lagos Nigeria </p>
+                    <p><b>Team :</b>Samuel A. Harden, Njoku Gift, Felix Stephen, Joshua Oluwatobi</p>
+
+                </div>
+            </div>
+
+            <div class="event_contact_details">
+                <p><b>Organization :</b><a href="#">The FirstHub</a></p>
+                <p><b>Website :</b><a href="#">www.thefirsthub.org</a></p>
+                <p><b>Email :</b><a href="#">thefirsthub@yahoo.com</a></p>
+                <p><b>Phone :</b><a href="#">+2347067897466</a></p>
+                <p><b>Address :</b><a href="#">Clinton Park Lagos, Nigeria</a></p>
+            </div>
+
+            <div class="event_location_img">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15888.742142278534!2d6.972553408149736!3d5.388670122138953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10425dcecdcddefd%3A0x300a4f8d506bec7e!2sHall%20Of%20Excellence%201000%20Cap.%20FUTO!5e0!3m2!1sen!2sng!4v1692148000089!5m2!1sen!2sng"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="event_button">
+                <button class="book_event" onclick="togglePopup()">Book Event</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="event-content">
+            <div class="close-btn" onclick="togglePopup()">&times;</div>
+            <h5>Fill in your email to get your event ticket 📭</h5>
+
+            <div class="event-email">
+                
+                    <input type="email"  id="userEmail" placeholder="Enter your email....">
+                    <button type="submit" onclick="sendEmail()">Send</button>
+                
+                
+            </div>
+
+            <div class="event_state_msg">
+                <p>Ticket successfully sent, check email for confirmation</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/app.js"></script>
+</body>
+
+</html>
